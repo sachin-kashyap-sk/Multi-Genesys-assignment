@@ -1,0 +1,38 @@
+.topContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.innerContainer {
+  background-color: #ffffff;
+  width: 40%;
+  padding: 1%;
+  border: 2px solid #000;
+  border-radius: 20px;
+}
+
+.field {
+  padding-bottom: 2%;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 3%;
+}
+
+.btn {
+  background-color: #000 !important;
+}
+
+.btn :hover {
+  background-color: #000;
+}
+
+@media (max-width: 575.98px) {
+  .innerContainer {
+    width: 100%;
+  }
+}
