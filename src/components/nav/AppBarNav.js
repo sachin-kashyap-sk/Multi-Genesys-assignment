@@ -17,7 +17,7 @@ import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { setSearch } from "../redux/HomeSlice";
 import { useLocation } from "react-router-dom";
-
+import classes from "../styleContainer/Nav.module.css";
 const drawerWidth = 240;
 const navItems = [
   {
@@ -92,14 +92,7 @@ function AppBarNav(props) {
             <MenuIcon />
           </IconButton>
 
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "space-between",
-              minWidth: "60%",
-              alignItems: "center",
-            }}
-          >
+          <Box className={classes.firstContainer}>
             <Box
               sx={{
                 display: { xs: "none", sm: "block" },
@@ -125,11 +118,7 @@ function AppBarNav(props) {
                   onChange={(e) => {
                     dispatch(setSearch(e.target.value));
                   }}
-                  style={{
-                    padding: "4%",
-                    width: "100%",
-                    borderRadius: "10px",
-                  }}
+                  className={classes.inputStyle}
                 />
               ) : null}
             </Box>

@@ -25,7 +25,6 @@ const Edit = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // debugger;
     if (
       !input.name ||
       !input.emailId ||
